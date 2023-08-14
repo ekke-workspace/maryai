@@ -1,11 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Mary AI</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://vjs.zencdn.net/8.3.0/video-js.css" rel="stylesheet" />
 </head>
+
 <body>
-    <h1>Hello world</h1>
+    <header>
+        <div class="mary">
+            MaryAI
+        </div>
+        <nav>
+            <div class="center-text">
+                <p>Enhacing Health Care in Remote Areas of Africa</p>
+            </div>
+            <ul>
+                <li><a href="#">About</a> | </li>
+                <li><a href="#">Services</a> | </li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main">
+        <div class="content">
+            <div class="animate video-player">
+                <video id="my-video" class="video-js  video" autoplay controls muted preload="auto" width="640" data-setup="">
+                    <source src="./videos/MaryAI.mp4" type="video/mp4" />
+                    <source src="./videos/MaryAI.mp4" type="video/webm" />
+                    <p class="vjs-no-js">
+                        To view this video please enable JavaScript, and consider upgrading to a
+                        web browser that
+                        <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                    </p>
+                </video>
+                <!-- <video class="video" src="./videos/MaryAI.mp4" autoplay="true" controls></video> -->
+            </div>
+            <div class="grid-container">
+                <div class="item">
+                    <img class="item-image" src="./images/MicrosoftTeams-image (4).png" alt="">
+                </div>
+                <div class="item">
+                    <h1>Empowering Health</h1>
+                    <p>We are leveraging AI and structural engineering to bring hospitals to underserved communities and to people's homes. Our small, movable clinics are equipped with AI-powered MaryAI software that can diagnose diseases several weeks before patients experience any noticeable symptoms. We're committed to making healthcare accessible to all and collaborating with like-minded partners. Join us in building a healthier, more equitable world.</p>
+                </div>
+                <div class="item">
+                    <img class="item-image" src="./images/MicrosoftTeams-image (3).png" alt="">
+                </div>
+                <div class="item">
+                    <img class="item-image product-image" src="./images/MicrosoftTeams-image (1).png" alt="">
+                </div>
+            </div>
+            <div class="no-motion-video video">
+                <video class="video-js  video" loop  autoplay muted controls preload="auto" width="640" data-setup="{}">
+                    <source src="./videos/file.mp4" type="video/mp4" />
+                    <source src="./videos/file.mp4" type="video/webm" />
+                    <p class="vjs-no-js">
+                        To view this video please enable JavaScript, and consider upgrading to a
+                        web browser that
+                        <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                    </p>
+                </video>
+            </div>
+            <h1 class="service-title">Our Services</h1>
+            <div class="services">
+                <div class="animate column">
+                    <div class="services-image">
+                        <img src="./images/service_image_1.png" alt="Image 1">
+                    </div>
+                    <div class="service-card">
+                        <div class="card-title">AI-Powered Diagonostics</div>
+                        <p>Our software utilizes artificial intelligence algorithms to analyze medical data and images (such as X-rays, CT scans, and MRIs), aiding in the early detection and diagnosis of various conditions and diseases.​</p>
+                    </div>
+                </div>
+                <div class="animate column">
+                    <div class="services-image">
+                        <img src="./images/service_image_2.png" alt="Image 1">
+                    </div>
+                    <div class="service-card">
+                        <div class="card-title">Symptom Assessment</div>
+                        <p>Our platform allows users to input their symptoms and receive a preliminary assessment of potential health issues, providing guidance on the next steps to take for medical care.</p>
+                    </div>
+                </div>
+                <div class="animate column">
+                    <div class="services-image">
+                        <img src="./images/service_image_3.png" alt="Image 1">
+                    </div>
+                    <div class="service-card">
+                        <div class="card-title">Telemedicine Solutions</div>
+                        <p>Our technology enables remote consultations and virtual healthcare services, connecting patients with healthcare providers for timely medical advice and guidance, particularly useful in areas with limited access to healthcare facilities.</p>
+                    </div>
+                </div>
+                <div class="animate column">
+                    <div class="services-image">
+                        <img src="./images/service_image_4.png" alt="Image 1">
+                    </div>
+                    <div class="service-card">
+                        <div class="card-title">Data Analytics and Insights</div>
+                        <p>We gather and analyze healthcare data to generate valuable insights and statistics, aiding in healthcare planning, policy-making, and resource allocation to improve healthcare delivery in underserved regions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="address">
+            <div class="left-side">
+                <img width="100" src="./images/MicrosoftTeams-image.png" alt="">
+                <img width="100" src="./images/MicrosoftTeams-image.png" alt="">
+            </div>
+            <div class="right-side">
+                <h1>Contact Us</h1>
+                <p>N1 Highway <br>
+                    Dzorwulu- Accra, Ghana <br>
+                    +233 (50) 067 - 1322</p>
+            </div>
+        </div>
+        <div class="copy">
+            <p>Copyright @ MaryAI 2023</p>
+        </div>
+    </footer>
+
 </body>
+
+<script src="./js/app.js"></script>
+<script src="https://vjs.zencdn.net/8.3.0/video.min.js"></script>
 </html>
