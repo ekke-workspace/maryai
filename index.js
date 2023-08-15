@@ -11,7 +11,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 //setup static file connections
-app.use(express.static('./static_files'));
+app.use(express.static(__dirname + "/static_files/"));
 
 //start noteController
 siteController(app);
