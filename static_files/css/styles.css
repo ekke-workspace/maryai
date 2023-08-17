@@ -89,10 +89,17 @@ nav ul li a {
   background-color: #000;
   margin-bottom: 4em;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .no-motion-video video {
   padding: 0 30%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100%;
   object-position: top;
 }
@@ -105,10 +112,32 @@ nav ul li a {
   letter-spacing: 0.1em;
   font-family: 'Times New Roman', Times, serif;
 }
-
+canvas{
+  pointer-events: auto;
+  cursor: none;
+  aspect-ratio: auto 300 / 49;
+  bottom: 0;
+  filter: blur(14px);
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+  box-sizing: content-box!important;
+  outline: none!important;
+}
 .video-js {
+  font-size: 10px;
+  cursor: none;
+  box-shadow: 0 0 20px rgba(0,0,0,.2);
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  box-sizing: content-box!important;
+  outline: none!important;
   width: 100%;
-  height: clamp(720px, 1024px, 100%);
+  /* height: clamp(720px, 1024px, 100%); */
+  /* position: cover; */
 }
 .deinpg{
   padding-inline: var(--default-padding);
@@ -279,6 +308,14 @@ ul {
   }
   .ghc-2{
     width: 100%;
+  }
+
+  .video-container{
+    padding-inline: 20%!important;
+  }
+
+  video {
+    padding: 100px;
   }
 
 
