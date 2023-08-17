@@ -368,7 +368,7 @@ footer {
 
 
 footer img {
-  aspect-ratio: auto 320 / 292;
+  /* aspect-ratio: auto 320 / 292; */
 }
 
 .address-section {
@@ -394,12 +394,15 @@ footer img {
   font-size: large;
 }
 
-.left-side img {
-  /* position: relative; */
-  /* width: 200px; */
+.left-side .img1 {
+  width: 320px;
   padding: 10px;
 }
 
+.left-side .img2 {
+  width: 160px;
+  padding: 10px;
+}
 .copyright {
   color: whitesmoke;
   bottom: 40px;
