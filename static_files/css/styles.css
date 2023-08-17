@@ -95,8 +95,7 @@ nav ul li a {
 }
 
 .no-motion-video video {
-  padding: 0 30%;
-  
+  padding: 10% 30%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -314,9 +313,14 @@ ul {
     padding-inline: 20%!important;
   }
 
-  video {
-    padding: 100px;
+  canvas{
+    aspect-ratio: auto 100 / 29;
+    position: absolute;
+    right: 0;
+    top: 0;
+    outline: none!important;
   }
+
 
 
   .grid {
@@ -403,6 +407,12 @@ ul {
     flex-direction: column;
     grid-template-columns: 1fr;
   }
+}
+
+video{
+  object-fit: contain;
+  overflow-clip-margin: content-box;
+  overflow: clip;
 }
 
 .animate {
