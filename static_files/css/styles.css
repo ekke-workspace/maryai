@@ -8,6 +8,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Times New Roman', Times, serif;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -87,6 +88,7 @@ nav ul li a {
 }
 
 
+
 .content-wrapper {
   margin: 5%;
 }
@@ -146,7 +148,7 @@ nav ul li a {
   /* background-color: aqua; */
 }
 .video-container, .content-wrapper, .services-wrapper, .static-video{
-  padding: 1em;
+  margin: 1em;
 }
 
 .grid-item p {
@@ -355,6 +357,29 @@ footer {
 .copyright {
   margin: 30px;
   font-size: 1.2em;
+}
+
+/* back to top */
+/* Your existing footer styles */
+
+/* Your existing footer styles */
+
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 100%;
+  border: 1px solid rgba(50, 150, 50, 0.6);
+  display: none; /* Hide initially */
+  margin: 6px;
+}
+
+#back-to-top img {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
 }
 
 /* Media query for mobile devices */
