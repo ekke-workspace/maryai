@@ -10,15 +10,6 @@
   font-family: 'Times New Roman', Times, serif;
 }
 
-.main-content {
-  width: 100%;
-  min-height: 100vh;
-  background-position: cover;
-  background-size: cover;
-  /* padding: 0 4em; */
-  overflow: hidden;
-}
-
 header {
   text-align: center;
   background-color: #fafafa;
@@ -79,72 +70,37 @@ nav ul li a {
   font-weight: 400;
 }
 
-
-.video {
-  max-width: 100%;
-}
-
-.no-motion-video {
-  height: clamp(40vh, 80vw, 30vh);
-  background-color: #000;
-  margin-bottom: 4em;
-  overflow: hidden;
-}
-
-.no-motion-video video {
-  padding: 0 30%;
-  height: 100%;
-  object-position: top;
-}
-
-.service-heading {
-  text-align: center;
-  margin: 1.2em;
-  font-size: 3.2em;
-  font-weight: 400;
-  letter-spacing: 0.1em;
-  font-family: 'Times New Roman', Times, serif;
-}
-
-.video-js {
-  width: 100%;
-  height: clamp(720px, 1024px, 100%);
-}
-.deinpg{
-  padding-inline: var(--default-padding);
-}
 .video-container {
   position: relative;
-  width: 100%;
-  padding-inline: var(--default-padding);
-  padding-bottom: var(--default-padding);
-  padding-block: 3%;
   aspect-ratio: 16 / 9;
-  /* 16:9 aspect ratio */
   overflow: hidden;
+  max-width: 100%;
+  margin-inline: 5%;
 }
 
-/* Embed video with absolute positioning */
 .video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  aspect-ratio: 16 / 9;
-  /* 16:9 aspect ratio */
 }
 
+
+.content-wrapper{
+  margin: 5%;
+
+}
 
 .grid {
   display: grid;
   grid-template-columns: 3fr 2fr;
-  gap: 6em;
-  /* padding-bottom: 4em; */
+  gap: 2em;
 }
 .header-container{
   width: 100%;
   display: flex;
   flex-direction: row;
-  padding-top: 30px;
 }
 .ghc-1{
   width: 60%;
@@ -156,56 +112,73 @@ nav ul li a {
   align-items: center;
   text-align: center;
   justify-content: right;
-  font-size: 1.2em;
+  font-size: 2em;
 }
 
-.grid-item {
-  /* padding-block: 3em; */
-}
 
 .grid-item h1 {
   text-align: center;
-  /* line-height: 3rem; */
   letter-spacing: 0.1em;
-  /* font-size: 2rem; */
   margin-bottom: 12px;
-  font-size: clamp(16px, 2vw, 24px); /* Font size between 16px and 24px, responsive to viewport width */
   line-height: clamp(1.2em, 2.5vw, 3rem); /* Line height between 1.5 and 2, responsive to viewport width */
 
 }
 
+.grid-item{
+  background: transparent;
+  vertical-align: baseline;
+  overflow-wrap: break-word;
+  pointer-events: none;
+  text-align: start;
+  padding: 1em;
+  /* background-color: aqua; */
+}
 
 .grid-item p {
+  font-family: 'Times New Roman', Times, serif;
   text-align: center;
-  /* line-height: 2em; */
   letter-spacing: 0.1em;
-  font-size: 20px;
   color: #000000;
-  font-size: clamp(16px, 2vw, 24px); /* Font size between 16px and 24px, responsive to viewport width */
-  line-height: clamp(1.3em, 2.5vw, 2em); /* Line height between 1.5 and 2, responsive to viewport width */
-
+  line-height: 2em;
+  font-size: 20px;
+  overflow-wrap: break-word;
+  padding: 0.2em;
 }
 
 
 .grid-item-image {
+  /* padding: 2em; */
   max-width: 100%;
   height: auto;
 }
 
 
+.service-heading {
+text-align: center;
+margin: 1.2em;
+font-size: 3.2em;
+font-weight: 400;
+letter-spacing: 0.1em;
+font-family: 'Times New Roman', Times, serif;
+}
+
+
+.services-container{
+  margin: 5%;
+}
+
 /* Define the container style */
-.service-container {
+.service-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 30px;
-  padding-block: 0!important;
+  gap: 20px;
 }
 
 /* Define the column styles */
 .service {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /* padding: 20px; */
+  padding: 20px;
   background-color: #fafafa;
   text-align: start;
 }
@@ -218,17 +191,31 @@ nav ul li a {
   justify-content: center;
   align-items: start;
   padding-left: 10px;
-  /* line-height: 1.4rem; */
   border-radius: 12px;
-  box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.021);
-  letter-spacing: .1em;
-  font-size: 16px; /* Font size between 16px and 24px, responsive to viewport width */
-  line-height: clamp(1.3em, 2.5vw, 1.4em); /* Line height between 1.5 and 2, responsive to viewport width */
-
+  box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.021);  
 }
 
 .service-card p {
-  color: rgba(0, 0, 0, 0.85);
+  /* color: rgba(0, 0, 0, 0.85); */
+  font-size: 16px;
+  line-height: 1.5em;
+  font-family: 'Times New Roman', Times, serif;
+  letter-spacing: 0em;
+  overflow-wrap: break-word;
+  text-align: start;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+  pointer-events: auto;
+  font: normal normal normal 17px/1.4em helvetica-w01-light,helvetica-w02-light,sans-serif;
+  color: rgb(30,36,46);
+  letter-spacing: 0em;
+  margin-block: 0;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5em;
 }
 
 
@@ -253,120 +240,30 @@ nav ul li a {
   padding: 10px;
 }
 
-/* Media query for mobile devices */
-@media (max-width: 1024px) {
-  
-nav {
+
+.static-video{
+  margin: 5%;
+}
+
+.video-wrapper {
+  max-height: 300px;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  }
-  .header-logo{
-    /* padding: 1em; */
-    font: normal normal normal 47.14285714285714px/1.4em 'times new roman',times,serif;
-  }
-
-  .deinpg{
-    padding: 0.2em;
-  }
-
-ul {
-  position: relative;
-  padding-block: 2em;
-  }
-
-  .ghc-1{
-    width: 0%;
-  }
-  .ghc-2{
-    width: 100%;
-  }
-
-
-  .grid {
-    grid-template-columns: 1fr;
-    padding-top: 10px;
-  }
-
-  .service-container {
-    padding: 0;
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  .grid-item{
-    padding: 0;
-  }
-
-  .service {
-    display: grid;
-    padding: 0;
-    margin-block: 30px;
-    text-align: center;
-  }
-
-  .services-image{
-    width: 100%;
-  }
-  .services-image img{
-    width: 100%;
-  }
-  .service-heading{
-    font-size: 2.2em;
-  }
-
-
-  .video-container {
-    padding: 0;
-  }
-
-  .main-content {
-    padding: 0;
-  }
-
-  .card-heading {
-    text-align: center;
-    margin-top: 0.2em;
-    padding: 0.2rem;
-  }
-
-  .address-section{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column!important;
-  }
-  .left-side {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-  }
-
-  .address-section h1{
-    visibility: visible;
-    display: block;
-    text-decoration: underline;
-    font-size: 2.2em;
-  }
-  
-  .right-side h1{
-    visibility: visible;
-    display: block;
-  }
-  
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: black;
 }
 
-@media (max-width: 560px) {
-  .service {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    grid-template-columns: 1fr;
-  }
+.video {
+  width: 45%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
+
+
 
 .animate {
   opacity: 0;
@@ -381,74 +278,112 @@ ul {
   }
 }
 
-footer {
-  background-image: url('../images/footer_image.png');
-  width: 100%;
-  height: 500px;
-  object-fit: cover;
-  object-position: 50% 0;
-  background-repeat: no-repeat;
-  margin-top: 4em;
-  display: flex;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+
+
+@media (max-width: 560px) {
+  .service {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+  }
 }
 
 
-footer img {
-  /* aspect-ratio: auto 320 / 292; */
-}
 
-.address-section {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  padding: 5em;
-  color: whitesmoke;
-  justify-content: space-between;
-}
+/* Media query for mobile devices */
+@media (max-width: 1024px) {
 
-.address-section h1{
-  visibility: visible;
-  display: visible;
-}
-.right-side{
-  color: rgb(115,120,130);
-}
-.right-side h1{
-  visibility: hidden;
-  display: none;
-  text-decoration: underline;
-  font-size: 3.2em;
-}
+  nav {
+    display: flex;
+    flex-direction: column;
+    }
+    
+    header {
+      padding: 2em 10% 1em 10%;
+  }
+    
+    .header-logo{
+      font: normal normal normal 47.14285714285714px/1.4em 'times new roman',times,serif;
+      margin-top: 30px;
+    }
+  
+  ul {
+    position: relative;
+    padding-block: 2em;
+    }
 
-.left-side {
-  display: flex;
-  flex-direction: column;
-}
+    .header-container{
+      padding: 0;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      width: 100vw;
+    }
 
+    .ghc-1{
+        display: none;
+        visibility: hidden;
+        
+      }
+      
+      .ghc-2{
+      width: 100%;
+      font-size: 1.2rem;
+      font-weight: 400;
+      overflow-wrap: break-word;
+  
+      margin: 0;
+      padding: 0;
 
-.right-side h1 {
-  font-size: larger;
-}
+    }
 
-.right-side p {
-  font-size: large;
-}
+  .grid {
+      grid-template-columns: 1fr;
+      /* padding-top: 10px; */
+      gap: 0;
+  }
+  .grid-item-image{
+      padding: 0;
+      margin: 0;
+      margin-bottom: 10px;
+      
+  }
+  .services-container{
+      margin: 0;
+  }
+  .service-wrapper {
+      padding: 0;
+      grid-template-columns: 1fr;
+    }
+  
+  .service {
+      padding: 10px;
+      display: grid;
+      padding: 0;
+      margin-block: 30px;
+      text-align: center;
+    }
 
-.left-side .img1 {
-  width: 320px;
-  padding: 10px;
-}
+    .card-heading, .service-card p{
+      padding-top: 10px;
+      text-align: center;
+    }
+  
+    .services-image{
+      width: 100%;
 
-.left-side .img2 {
-  width: 160px;
-  padding: 10px;
-  margin-left: 20px;
-}
-.copyright {
-  color: whitesmoke;
-  bottom: 40px;
-}
+    }
+    .services-image img{
+      width: 100%;
+    }
+    .service-heading{
+      font-size: 2.2em;
+    }
+  
+  
+  
+  }    
