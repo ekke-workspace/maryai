@@ -10,6 +10,9 @@
     
   </style>
 <body>
+    <!-- back to top -->
+    <div id="top"></div>
+    <!-- header begins -->
     <header>
         <div class="header-logo">
             MaryAI
@@ -20,17 +23,21 @@
             </div>
             <ul>
                 <li><a href="#">About</a><span>|</span></li>
-                <li><a href="#">Services</a><span>|</span></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#services">Services</a><span>|</span></li>
+                <li><a href="#contact-us">Contact</a></li>
             </ul>
         </nav>
     </header>
+    <!-- header ends -->
+    <!-- video begins -->
     <div class="video-container">
-        <video controls autoplay loop muted>
+        <video controls autoplay="true" muted>
           <source src="https://firebasestorage.googleapis.com/v0/b/sampleproject-c35cd.appspot.com/o/MaryAI.mp4?alt=media&token=238c99d7-cc0d-41cd-8085-a5cf296f9b00" type="video/mp4">
           Your browser does not support the video tag.
         </video>
       </div>
+      <!-- video ends -->
+      <!-- content section begins -->
       <section class="content-wrapper">
         <div class="header-container">
             <div class="grid-header ghc-1"></div>
@@ -53,21 +60,25 @@
             </div>
         </div>
       </section>
+      <!-- content section ends -->
+      <!-- Static video begins -->
       <section class="static-video">
         <div class="video-wrapper">
-            <video class="video" autoplay loop muted>
+            <video class="video" autoplay="true" loop muted>
                 <source src="https://firebasestorage.googleapis.com/v0/b/sampleproject-c35cd.appspot.com/o/file.mp4?alt=media&token=e468fdd2-b7cc-4739-b0fb-0f8e0efda968" type="video/mp4">
                 Your browser does not support the video tag.
               </video>
         </div>
         </div>
       </section>
-      <section class="services-container">
+      <!-- static video ends -->
+      <!-- service begin -->
+      <section id="services" class="services-container">
         <h1 class="service-heading">Our Services</h1>
             <div class="service-wrapper">
                 <div class="service animate">
                     <div class="services-image">
-                        <!-- <img src="./images/service_image_1.png" alt="Image 1"> -->
+                        <img src="./images/service_image_1.png" alt="Image 1">
                     </div>
                     <div class="service-card">
                         <div class="card-heading">AI-Powered Diagonostics</div>
@@ -103,5 +114,57 @@
                 </div>
             </div>
       </section>
+      <!-- service ends -->
+      <!-- Your page content here -->
+
+    <!-- Your page content here -->
+
+    <a href="#top" id="back-to-top">
+    <img src="./icons/arrow-up-solid.svg" alt="Back to Top">
+  </a>
+  
+
+      <!-- footer begins -->
+      <footer id="contact-us">
+        <div class="address-section">
+            <h1 class="la1">Contact Us</h1>
+            <div class="left-side">
+                <img class="img1" src="./images/footer_image_2.png" alt="">
+                <img class="img2" src="./images/footer_image_1.png" alt="">
+            </div>
+            <div class="right-side">
+                <h1>Contact Us</h1>
+                <p>N1 Highway <br>
+                    Dzorwulu- Accra, Ghana <br>
+                    +233 (50) 067 - 1322</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ MaryAI 2023</p>
+        </div>
+    </footer>
+      <!-- footer ends -->
 </body>
+<script>
+    // Show/hide "Back to Top" button based on scroll position
+    const backToTopButton = document.getElementById('back-to-top');
+  
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > 300) {
+        backToTopButton.style.display = 'block';
+      } else {
+        backToTopButton.style.display = 'none';
+      }
+    });
+  
+    // Smooth scrolling to top when "Back to Top" button is clicked
+    backToTopButton.addEventListener('click', function (event) {
+      event.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  </script>
+  
 </html>
